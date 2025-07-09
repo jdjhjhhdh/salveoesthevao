@@ -12,10 +12,32 @@ kwaiq.page();
   <title>Salve o Esthevao - Urgente</title>
   <link rel="stylesheet" href="css/style.css" />
 
-  <header class="white-header">
-           <div class="logo">
-              <img src="1693067871.79.png" alt="Logomarca" class="logoviva">
-          </div>
+  <style>
+  header.white-header img {
+    max-width: 150px;
+    height: auto;
+    display: block;
+  }
+
+  @media (max-width: 600px) {
+    header.white-header img {
+      max-width: 120px;
+    }
+  }
+
+  header.white-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    padding: 10px 20px;
+    border-bottom: 1px solid #ddd;
+  }
+</style>
+
+<header class="white-header">
+  <img src="1693067871.79.png" alt="Logomarca">
+</header>
 </head>
 <body>
   <div class="urgente-banner">
