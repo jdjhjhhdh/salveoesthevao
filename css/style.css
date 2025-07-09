@@ -1,7 +1,11 @@
     width: 200px;
-
+.logo img {
+    max-width: 150px; /* Tamanho máximo da logo */
+    height: auto;     /* Mantém proporção */
+    display: block;   /* Remove espaço extra abaixo da imagem */
 }
 
+/* Header branco */
 .white-header {
     display: flex;
     justify-content: space-between;
@@ -9,10 +13,6 @@
     background-color: white;
     padding: 10px 20px;
     border-bottom: 1px solid #ddd;
-}
-
-.logo img {
-    
 }
 * {
   margin: 0;
