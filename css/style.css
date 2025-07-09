@@ -1,18 +1,26 @@
     width: 200px;
-.logo img {
-    max-width: 150px; /* Tamanho máximo da logo */
-    height: auto;     /* Mantém proporção */
-    display: block;   /* Remove espaço extra abaixo da imagem */
+.white-header {
+  display: flex;
+  justify-content: center; /* Centraliza a logo */
+  align-items: center;
+  background-color: white;
+  padding: 10px 20px;
+  border-bottom: 1px solid #ddd;
 }
 
-/* Header branco */
-.white-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: white;
-    padding: 10px 20px;
-    border-bottom: 1px solid #ddd;
+.logo img,
+.logoviva {
+  max-width: 150px;   /* Controla largura da imagem */
+  height: auto;
+  display: block;
+}
+
+/* Ajustes para telas menores */
+@media (max-width: 600px) {
+  .logo img,
+  .logoviva {
+    max-width: 120px;  /* Logo menor no celular */
+  }
 }
 * {
   margin: 0;
