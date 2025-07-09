@@ -65,8 +65,51 @@ kwaiq.page();
 
     <section class="pix-section">
       <h2>💸 Faça sua Doação via Pix</h2>
-      <button id="copy-btn">Copiar chave Pix</button>
-      <p id="copy-msg" class="msg"></p>
+      <!-- Botão de copiar Pix -->
+<button onclick="copiarPix()">Copiar chave Pix</button>
+
+<!-- Onde aparece a mensagem -->
+<p id="mensagem-copiada" style="display: none; color: green; font-weight: bold; margin-top: 8px;">
+  Chave Pix copiada!
+</p>
+
+<!-- Script que faz tudo funcionar -->
+<script>
+  function copiarPix() {
+    const chavePix = "<!-- Botão de copiar Pix -->
+<button onclick="copiarPix()">Copiar chave Pix</button>
+
+<!-- Onde aparece a mensagem -->
+<p id="mensagem-copiada" style="display: none; color: green; font-weight: bold; margin-top: 8px;">
+  Chave Pix copiada!
+</p>
+
+<!-- Script que faz tudo funcionar -->
+<script>
+  function copiarPix() {
+    const chavePix = "salveoesthevao@gmail.com"; // Substitua pela sua chave Pix
+    navigator.clipboard.writeText(chavePix).then(function () {
+      const mensagem = document.getElementById("mensagem-copiada");
+      mensagem.style.display = "block";
+
+      // Oculta a mensagem após 3 segundos (opcional)
+      setTimeout(() => {
+        mensagem.style.display = "none";
+      }, 3000);
+    });
+  }
+</script>"; // Substitua pela sua chave Pix
+    navigator.clipboard.writeText(chavePix).then(function () {
+      const mensagem = document.getElementById("mensagem-copiada");
+      mensagem.style.display = "block";
+
+      // Oculta a mensagem após 3 segundos (opcional)
+      setTimeout(() => {
+        mensagem.style.display = "none";
+      }, 3000);
+    });
+  }
+</script>
     </section>
 
     <section class="stats-section">
